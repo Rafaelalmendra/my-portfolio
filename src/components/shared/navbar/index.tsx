@@ -1,5 +1,9 @@
 import Image from 'next/image';
 
+import { Button, ThemeToggle } from 'components';
+
+import { Github, Linkedin, Search } from 'lucide-react';
+
 const Navbar = () => {
   return (
     <nav className="w-full h-[4.625rem] flex items-center justify-center">
@@ -15,7 +19,21 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-3"></div>
+        <div className="flex items-center gap-3">
+          <Button variant="outline" size="icon">
+            <Search size={22} />
+          </Button>
+
+          <Button variant="outline" size="icon">
+            <Github size={22} />
+          </Button>
+
+          <Button variant="outline" size="icon">
+            <Linkedin size={22} />
+          </Button>
+
+          <ThemeToggle />
+        </div>
       </div>
     </nav>
   );
