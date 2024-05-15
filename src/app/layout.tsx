@@ -30,7 +30,13 @@ export default function RootLayout({
         >
           <Navbar />
 
-          {children}
+          <div
+            style={{
+              marginTop: 'calc(4.625rem + 3.625rem)',
+            }}
+          >
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

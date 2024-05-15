@@ -14,10 +14,13 @@ import { Github, Linkedin, Menu, Search } from 'lucide-react';
 
 const Navbar = () => {
   const pathname = usePathname();
-  const { theme } = useTheme();
+  const { theme, systemTheme } = useTheme();
+
+  const isDark =
+    theme === 'dark' || (theme === 'system' && systemTheme === 'dark');
 
   return (
-    <nav className="w-full h-[4.5rem] lg:h-[5.25rem] flex items-center justify-center border-b">
+    <nav className="fixed top-0 w-full h-[4.5rem] lg:h-[5.25rem] flex items-center justify-center border-b">
       <div className="max-w-7xl w-full flex items-center justify-between px-4 lg:px-0">
         <div className="flex items-center gap-7">
           <Link href="/">
@@ -26,7 +29,7 @@ const Navbar = () => {
                 layout="fill"
                 className="object-contain"
                 src={
-                  theme === 'dark'
+                  isDark
                     ? '/logos/logo-simple-white.svg'
                     : '/logos/logo-simple-black.svg'
                 }
