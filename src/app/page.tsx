@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 
-import { Badge, Button } from 'components';
+import { Badge, Button, HeroCarousel } from 'components';
 
 import { Linkedin, Mail } from 'lucide-react';
 
@@ -44,6 +44,8 @@ const Home: NextPage = () => {
             </Button>
           </a>
         </div>
+
+        <HeroCarousel />
       </main>
     </>
   );
