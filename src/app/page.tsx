@@ -1,11 +1,11 @@
 import type { NextPage } from 'next';
 
-import { getProjects } from 'queries';
+import { getRecentProjects } from 'queries';
 
 import { HomeView } from 'views';
 
 const Home: NextPage = async () => {
-  const projects = await getProjects();
+  const projects = await getRecentProjects();
 
   return <HomeView projects={projects} />;
 };

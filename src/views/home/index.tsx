@@ -14,7 +14,7 @@ const HomeView = ({ projects }: HomeViewProps) => {
       <HeroTexts />
       <HeroCarousel />
 
-      <Button variant="link" className="mt-8 gap-2">
+      <Button variant="link" className="gap-2 mt-8 mb-[48px]">
         <ArrowDownToLine size={16} /> Baixar Currículo
       </Button>
 
