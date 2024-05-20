@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { toast } from 'components';
-
 const API_URL = 'https://graphql.datocms.com/';
 const API_TOKEN = process.env.NEXT_PUBLIC_DATOCMS_READ_ONLY_API_TOKEN;
 
@@ -23,10 +21,6 @@ const fetchDatoCms = async (query: string, variables?: any) => {
 
   if (json.errors) {
     console.error(json.errors);
-    toast({
-      title: 'Erro ao buscar dados do CMS',
-      variant: 'destructive',
-    });
   }
 
   return json.data;

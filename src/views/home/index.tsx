@@ -1,14 +1,21 @@
-import type { ProjectType } from 'types';
+import type { ClientType, ProjectType } from 'types';
 
-import { Button, HeroCarousel, HeroTexts, RecentProjects } from 'components';
+import {
+  Button,
+  ClientsCarousel,
+  HeroCarousel,
+  HeroTexts,
+  RecentProjects,
+} from 'components';
 
 import { ArrowDownToLine } from 'lucide-react';
 
 type HomeViewProps = {
   projects: ProjectType[];
+  clients: ClientType[];
 };
 
-const HomeView = ({ projects }: HomeViewProps) => {
+const HomeView = ({ projects, clients }: HomeViewProps) => {
   return (
     <main className="w-full flex flex-col items-center justify-center px-4 lg:px-0">
       <HeroTexts />
@@ -21,6 +28,8 @@ const HomeView = ({ projects }: HomeViewProps) => {
       {projects && projects.length > 0 && (
         <RecentProjects projects={projects} />
       )}
+
+      {clients && clients.length > 0 && <ClientsCarousel clients={clients} />}
     </main>
   );
 };

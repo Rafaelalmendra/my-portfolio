@@ -6,6 +6,7 @@ export * from './shared/theme-provider';
 export * from './pages/home/hero-texts';
 export * from './pages/home/hero-carousel';
 export * from './pages/home/recent-projects';
+export * from './pages/home/clients-carousel';
 
 export * from './ui/badge';
 export * from './ui/toast';
