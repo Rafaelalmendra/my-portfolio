@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import type { ProjectType } from 'types';
 
 import { Button, ProjectCard } from 'components';
@@ -7,8 +9,6 @@ type RecentProjectsProps = {
 };
 
 const RecentProjects = ({ projects }: RecentProjectsProps) => {
-  console.log('data: ', projects);
-
   return (
     <section className="w-full flex items-center justify-center">
       <div className="max-w-7xl w-full flex flex-col justify-center">
@@ -20,8 +20,10 @@ const RecentProjects = ({ projects }: RecentProjectsProps) => {
           ))}
         </div>
 
-        <div>
-          <Button className="w-full lg:w-auto mt-5">Ver todos</Button>
+        <div className="w-full flex items-center justify-center">
+          <Link href="/works" className="w-full lg:w-auto">
+            <Button className="w-full lg:w-auto mt-5">Visualizar todos</Button>
+          </Link>
         </div>
       </div>
     </section>
