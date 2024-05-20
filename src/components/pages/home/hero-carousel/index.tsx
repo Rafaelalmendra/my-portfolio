@@ -19,16 +19,19 @@ const HeroCarousel = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
 
   return (
-    <div className="max-w-2xl w-full flex items-center justify-center">
+    <div className="max-w-3xl w-full flex items-center justify-center overflow-hidden ">
       <Carousel
         plugins={[plugin.current]}
         className="w-full"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
+        opts={{
+          loop: true,
+        }}
       >
-        <CarouselContent className="gap-4">
+        <CarouselContent className="gap-2 lg:gap-6">
           {technologiesMock.map((item) => (
-            <CarouselItem key={item.id} className="basis-1/8">
+            <CarouselItem key={item.id} className="basis-1/4 lg:basis-1/12">
               <div className="w-[3.375rem] h-[3.375rem] flex items-center justify-center rounded-[0.875rem] bg-[#0F172A]">
                 <div className="relative w-[32px] h-[32px]">
                   <Image

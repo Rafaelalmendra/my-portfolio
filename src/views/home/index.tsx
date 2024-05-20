@@ -4,7 +4,7 @@ import { ArrowDownToLine } from 'lucide-react';
 
 const HomeView = () => {
   return (
-    <main className="w-full flex flex-col items-center justify-center">
+    <main className="w-full flex flex-col items-center justify-center px-4 lg:px-0">
       <HeroTexts />
       <HeroCarousel />
 
