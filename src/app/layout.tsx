@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google';
 
 import './globals.css';
 
-import { Navbar, ThemeProvider } from 'components';
+import { Navbar, ThemeProvider, Toaster } from 'components';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -29,6 +29,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
+          <Toaster />
 
           <div
             style={{
