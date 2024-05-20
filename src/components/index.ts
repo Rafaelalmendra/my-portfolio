@@ -1,4 +1,5 @@
 export * from './shared/navbar';
+export * from './shared/footer';
 export * from './shared/project-card';
 export * from './shared/theme-toggle';
 export * from './shared/theme-provider';
