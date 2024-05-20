@@ -77,7 +77,9 @@ const Navbar = () => {
           <ThemeToggle />
         </div>
 
-        <div className="block lg:hidden">
+        <div className="flex lg:hidden items-center justify-center gap-3">
+          <ThemeToggle />
+
           <Button variant="outline" size="icon">
             <Menu size={22} />
           </Button>
