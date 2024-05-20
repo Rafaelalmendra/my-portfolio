@@ -31,6 +31,50 @@ const technologiesMock = [
     id: 8,
     icon: '/icons/typescript-icon.svg',
   },
+  {
+    id: 9,
+    icon: '/icons/fastify-icon.png',
+  },
+  {
+    id: 10,
+    icon: '/icons/react-query-icon.png',
+  },
+  {
+    id: 11,
+    icon: '/icons/git-icon.png',
+  },
+  {
+    id: 12,
+    icon: '/icons/github-icon.png',
+  },
+  {
+    id: 13,
+    icon: '/icons/azure-devops-icon.webp',
+  },
+  {
+    id: 14,
+    icon: '/icons/ant-icon.png',
+  },
+  {
+    id: 15,
+    icon: '/icons/java-icon.png',
+  },
+  {
+    id: 16,
+    icon: '/icons/jest-icon.png',
+  },
+  {
+    id: 17,
+    icon: '/icons/testing-library-icon.png',
+  },
+  {
+    id: 18,
+    icon: '/icons/storybook-icon.png',
+  },
+  {
+    id: 19,
+    icon: '/icons/clarity-icon.png',
+  },
 ];
 
 export { technologiesMock };
