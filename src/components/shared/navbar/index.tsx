@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-3">
-          <Button variant="outline" size="icon">
+          <Button variant="outline" size="icon" disabled>
             <Search size={22} />
           </Button>
 
