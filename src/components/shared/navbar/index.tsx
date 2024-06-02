@@ -54,6 +54,8 @@ const Navbar = () => {
             <Search size={22} />
           </Button>
 
+          <ThemeToggle />
+
           <a
             target="_blank"
             rel="noreferrer"
@@ -73,8 +75,6 @@ const Navbar = () => {
               <Linkedin size={22} />
             </Button>
           </a>
-
-          <ThemeToggle />
         </div>
 
         <div className="flex lg:hidden items-center justify-center gap-3">
