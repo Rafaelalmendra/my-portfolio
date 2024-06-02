@@ -20,3 +20,4 @@ export * from './ui/use-toast';
 export * from './ui/dropdown-menu';
 
 export * from './magicui/shine-border';
+export * from './magicui/animated-shiny-text';

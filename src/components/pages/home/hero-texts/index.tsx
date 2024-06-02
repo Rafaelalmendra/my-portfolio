@@ -1,15 +1,26 @@
 import Link from 'next/link';
 
-import { Badge, Button } from 'components';
+import { cn } from 'utils';
+
+import { Button } from 'components';
+import AnimatedShinyText from 'components/magicui/animated-shiny-text';
 
 import { Linkedin, Mail } from 'lucide-react';
 
 const HeroTexts = () => {
   return (
     <>
-      <Badge className="text-[0.625rem] lg:text-xs text-center text-[#5E5E5E] bg-[#F4F4F5] hover:bg-[#F4F4F5] hover:translate-y-[-2px] transition-transform cursor-default">
-        🚀 | Apaixonado pela interseção entre tecnologia, programação e Design.
-      </Badge>
+      <div
+        className={cn(
+          'group rounded-full border border-black/5 bg-neutral-100 text-sm text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-[#030C20] dark:hover:bg-neutral-800',
+        )}
+      >
+        <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+          <span>
+            🚀 Apaixonado pela interseção entre tecnologia, programação e Design
+          </span>
+        </AnimatedShinyText>
+      </div>
 
       <h1 className="text-center text-2xl lg:text-5xl font-semibold mt-6">
         Desenvolvedor de Software
