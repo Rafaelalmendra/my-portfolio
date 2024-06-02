@@ -18,3 +18,5 @@ export * from './ui/command';
 export * from './ui/carousel';
 export * from './ui/use-toast';
 export * from './ui/dropdown-menu';
+
+export * from './magicui/shine-border';

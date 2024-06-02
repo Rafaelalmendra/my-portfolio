@@ -16,10 +16,10 @@ import {
 } from 'components';
 
 const HeroCarousel = () => {
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 1500, stopOnInteraction: true }));
 
   return (
-    <div className="max-w-3xl w-full flex items-center justify-center overflow-hidden ">
+    <div className="relative max-w-3xl w-full flex items-center justify-center overflow-hidden ">
       <Carousel
         plugins={[plugin.current]}
         className="w-full"
@@ -48,6 +48,11 @@ const HeroCarousel = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+
+      <div
+        className="absolute bottom-0 left-0 right-0 flex items-center justify-center gap-2"
+        style={{ marginBottom: '-1.5rem', background: 'rgba(0, 0, 0, 0.5)' }}
+      />
     </div>
   );
 };
