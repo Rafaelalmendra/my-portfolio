@@ -2,8 +2,7 @@ import Link from 'next/link';
 
 import { cn } from 'utils';
 
-import { Button } from 'components';
-import AnimatedShinyText from 'components/magicui/animated-shiny-text';
+import { AnimatedShinyText, Button, TypingAnimation } from 'components';
 
 import { Linkedin, Mail } from 'lucide-react';
 
@@ -22,9 +21,10 @@ const HeroTexts = () => {
         </AnimatedShinyText>
       </div>
 
-      <h1 className="text-center text-2xl lg:text-5xl font-semibold mt-6">
-        Desenvolvedor de Software
-      </h1>
+      <TypingAnimation
+        className="text-center text-2xl lg:text-5xl font-semibold mt-6"
+        text="Desenvolvedor de Software"
+      />
 
       <p className="text-sm lg:text-base max-w-[1060px] text-justify lg:text-center mt-2 dark:text-[#bebebe] text-[#71717A]">
         Olá 👋 me chamo Rafael Almendra. Já participei de projetos com milhares

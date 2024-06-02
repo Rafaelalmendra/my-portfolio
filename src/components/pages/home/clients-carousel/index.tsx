@@ -20,7 +20,7 @@ type ClientsCarouselProps = {
 };
 
 const ClientsCarousel = ({ clients }: ClientsCarouselProps) => {
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 1500, stopOnInteraction: true }));
 
   return (
     <div className="max-w-7xl w-full flex flex-col items-center justify-center overflow-hidden my-[54px] lg:my-[70px]">
