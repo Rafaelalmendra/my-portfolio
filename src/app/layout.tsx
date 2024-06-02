@@ -9,7 +9,7 @@ import { Footer, Navbar, ThemeProvider, Toaster } from 'components';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Rafael Almendra',
+  title: 'Rafael Almendra - Desenvolvedor de Software',
   description:
     'Mais de 3 anos de experiência como desenvolvedor Front-end, com foco em tecnologias como: React, Next.js, Angular, Node.js, Javascript, TypeScript, Html, Css, Git e Figma.',
 };
