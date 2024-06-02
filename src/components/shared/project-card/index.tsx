@@ -20,8 +20,7 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
 
       <div className="w-full flex items-center justify-between mt-3">
         <p className="font-medium text-xl">{data.title}</p>
-        <p className="text-sm font-light opacity-65">Freelancer</p>{' '}
-        {/* TODO: ADJUST THIS */}
+        <p className="text-sm font-light opacity-65">{data.typeProject}</p>{' '}
       </div>
 
       <p className="mt-2 text-justify text-sm opacity-90 font-light">

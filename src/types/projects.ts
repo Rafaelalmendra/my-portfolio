@@ -1,6 +1,5 @@
 type ProjectType = {
   id: string;
-
   title: string;
   description: string;
   shortDescription: string;
@@ -11,6 +10,8 @@ type ProjectType = {
   technologies: {
     technologie: string;
   }[];
+  typeProject: string;
+
   figma?: string;
   deploy?: string;
   github?: string;

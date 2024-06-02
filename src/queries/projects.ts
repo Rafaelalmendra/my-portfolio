@@ -12,6 +12,7 @@ const getRecentProjects = async () => {
         title
         shortDescription
         deploy
+        typeProject
       }
     }
   `);
@@ -36,7 +37,7 @@ const getProjects = async () => {
         figma
         deploy
         github
-        ismyproject
+        typeProject
       }
     }
   `);
