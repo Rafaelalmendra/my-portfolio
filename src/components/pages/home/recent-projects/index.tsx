@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import type { ProjectType } from 'types';
 
-import { Button, ProjectCard } from 'components';
+import { ProjectCard, ShimmerButton } from 'components';
 
 type RecentProjectsProps = {
   projects: ProjectType[];
@@ -22,7 +22,9 @@ const RecentProjects = ({ projects }: RecentProjectsProps) => {
 
         <div className="w-full flex items-center justify-center">
           <Link href="/works" className="w-full lg:w-auto">
-            <Button className="w-full lg:w-auto mt-5">Visualizar todos</Button>
+            <ShimmerButton className="w-full lg:w-auto mt-5">
+              Visualizar todos
+            </ShimmerButton>
           </Link>
         </div>
       </div>

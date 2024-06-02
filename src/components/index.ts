@@ -20,5 +20,6 @@ export * from './ui/use-toast';
 export * from './ui/dropdown-menu';
 
 export * from './magicui/shine-border';
+export * from './magicui/shimmer-button';
 export * from './magicui/typing-animation';
 export * from './magicui/animated-shiny-text';
