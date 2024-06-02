@@ -1,5 +1,6 @@
 'use client';
 
+import { useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -16,8 +17,9 @@ const Navbar = () => {
   const pathname = usePathname();
   const { theme, systemTheme } = useTheme();
 
-  const isDark =
-    theme === 'dark' || (theme === 'system' && systemTheme === 'dark');
+  const isDark = useMemo(() => {
+    return systemTheme === 'dark' && (theme === 'system' || theme === 'dark');
+  }, [theme, systemTheme]);
 
   return (
     <nav className="fixed top-0 z-20 w-full h-[4.5rem] lg:h-[5.25rem] flex items-center justify-center border-b bg-white dark:bg-[#020817]">
@@ -25,16 +27,23 @@ const Navbar = () => {
         <div className="flex items-center gap-7">
           <Link href="/">
             <div className="relative w-[29px] h-[34px] hover:translate-y-[-2px] transition-transform">
-              <Image
-                layout="fill"
-                className="object-contain"
-                src={
-                  isDark
-                    ? '/logos/logo-simple-white.svg'
-                    : '/logos/logo-simple-black.svg'
-                }
-                alt="Logo do Rafael Almendra - Desenvolvedor Front-end"
-              />
+              {!isDark && (
+                <Image
+                  layout="fill"
+                  className="object-contain"
+                  src="/logos/logo-simple-black.svg"
+                  alt="Logo do Rafael Almendra - Desenvolvedor Front-end"
+                />
+              )}
+
+              {isDark && (
+                <Image
+                  layout="fill"
+                  className="object-contain"
+                  src="/logos/logo-simple-white.svg"
+                  alt="Logo do Rafael Almendra - Desenvolvedor Front-end"
+                />
+              )}
             </div>
           </Link>
 
