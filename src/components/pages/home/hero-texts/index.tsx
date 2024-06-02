@@ -11,10 +11,10 @@ const HeroTexts = () => {
     <>
       <div
         className={cn(
-          'group rounded-full border border-black/5 bg-neutral-100 text-sm text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-[#030C20] dark:hover:bg-neutral-800',
+          'group rounded-full border border-black/5 bg-neutral-100 text-[0.625rem] lg:text-sm text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-[#030C20] dark:hover:bg-neutral-800',
         )}
       >
-        <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+        <AnimatedShinyText className="text-center inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
           <span>
             🚀 Apaixonado pela interseção entre tecnologia, programação e Design
           </span>
@@ -22,11 +22,11 @@ const HeroTexts = () => {
       </div>
 
       <TypingAnimation
-        className="text-center text-2xl lg:text-5xl font-semibold mt-6"
+        className="text-center text-2xl lg:text-5xl font-semibold mt-2 lg:mt-6"
         text="Desenvolvedor de Software"
       />
 
-      <p className="text-sm lg:text-base max-w-[1060px] text-justify lg:text-center mt-2 dark:text-[#bebebe] text-[#71717A]">
+      <p className="text-xs lg:text-base max-w-[1060px] text-justify lg:text-center mt-2 dark:text-[#bebebe] text-[#71717A]">
         Olá 👋 me chamo Rafael Almendra. Já participei de projetos com milhares
         de acessos diários, faço bacharelado em Sistemas de Informação e fundei
         meu próprio sistema com o objetivo de revolucionar a gestão no universo
