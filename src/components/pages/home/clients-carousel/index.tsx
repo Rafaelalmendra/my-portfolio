@@ -41,7 +41,7 @@ const ClientsCarousel = ({ clients }: ClientsCarouselProps) => {
           {clients.map((item) => (
             <CarouselItem key={item.id} className="basis-1/3 lg:basis-1/6">
               <div className="w-full flex items-center justify-center px-2 py-1 rounded bg-transparent dark:bg-slate-50">
-                <div className="relative w-[184px] h-[52px]">
+                <div className="relative w-[174px] h-[46px]">
                   <Image
                     fill
                     src={item.image.url}
