@@ -12,7 +12,7 @@ const RecentProjects = ({ projects }: RecentProjectsProps) => {
   return (
     <section className="w-full flex items-center justify-center">
       <div className="max-w-7xl w-full flex flex-col justify-center">
-        <p>Últimos projetos</p>
+        <p>Projetos públicos</p>
 
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-7 mt-3">
           {projects.map((item) => (
