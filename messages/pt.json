@@ -1,6 +1,7 @@
 {
-  "header": {
+  "Header": {
     "headerHome": "Página Inicial",
+    "headerWorks": "Trabalhos",
     "headerAbout": "Sobre",
     "headerArticles": "Artigos",
     "headerContact": "Contato",
@@ -8,13 +9,13 @@
     "themeLight": "Claro",
     "themeSystem": "Sistema"
   },
-  "footer": {
+  "Footer": {
     "footerTitle": "Juntos, criaremos projetos inovadores",
     "footerDescription": "Se você busca desenvolver projetos de qualidade",
     "footerContact": "entre em contato",
     "footerMessage": "Feito com ❤️ e muito ☕"
   },
-  "home": {
+  "Home": {
     "title": "Desenvolvedor de Software",
     "subtitle": "Apaixonado pela interseção entre tecnologia, programação e Design",
     "description": "Olá 👋 me chamo Rafael Almendra. Já participei de projetos com milhares de acessos diários, faço bacharelado em Sistemas de Informação e fundei meu próprio sistema com o objetivo de revolucionar a gestão no universo jurídico. Te convido através deste site a conhecer um pouco mais sobre mim e meus projetos.",

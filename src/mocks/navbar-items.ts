@@ -1,29 +1,37 @@
-const navbarItems = [
-  {
-    id: 1,
-    title: 'Página Inicial',
-    href: '/',
-  },
-  {
-    id: 2,
-    title: 'Trabalhos',
-    href: '/works',
-  },
-  {
-    id: 3,
-    title: 'Sobre',
-    href: '/about',
-  },
-  {
-    id: 4,
-    title: 'Artigos',
-    href: '/articles',
-  },
-  {
-    id: 5,
-    title: 'Contato',
-    href: '/contact',
-  },
-];
+import { useTranslations } from 'next-intl';
 
-export { navbarItems };
+const NavbarMock = () => {
+  const t = useTranslations('Header');
+
+  const navbarItems = [
+    {
+      id: 1,
+      title: t('headerHome'),
+      href: '/',
+    },
+    {
+      id: 2,
+      title: t('headerWorks'),
+      href: '/works',
+    },
+    {
+      id: 3,
+      title: t('headerAbout'),
+      href: '/about',
+    },
+    {
+      id: 4,
+      title: t('headerArticles'),
+      href: '/articles',
+    },
+    {
+      id: 5,
+      title: t('headerContact'),
+      href: '/contact',
+    },
+  ];
+
+  return { navbarItems };
+};
+
+export { NavbarMock };

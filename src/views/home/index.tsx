@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl';
+
 import type { ClientType, ProjectType } from 'types';
 
 import {
@@ -16,13 +18,15 @@ type HomeViewProps = {
 };
 
 const HomeView = ({ projects, clients }: HomeViewProps) => {
+  const t = useTranslations('Home');
+
   return (
     <main className="w-full flex flex-col items-center justify-center px-4 lg:px-0">
       <HeroTexts />
       <HeroCarousel />
 
       <Button variant="link" className="gap-2 mt-8 mb-[48px]">
-        <ArrowDownToLine size={16} /> Baixar Currículo
+        <ArrowDownToLine size={16} /> {t('resumeDownload')}
       </Button>
 
       {projects && projects.length > 0 && (

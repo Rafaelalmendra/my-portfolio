@@ -4,6 +4,7 @@ export * from './shared/building';
 export * from './shared/project-card';
 export * from './shared/theme-toggle';
 export * from './shared/theme-provider';
+export * from './shared/language-toggle';
 
 export * from './pages/home/hero-texts';
 export * from './pages/home/hero-carousel';

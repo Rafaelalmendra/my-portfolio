@@ -1,6 +1,7 @@
 {
-  "header": {
+  "Header": {
     "headerHome": "Home",
+    "headerWorks": "Works",
     "headerAbout": "About",
     "headerArticles": "Articles",
     "headerContact": "Contact",
@@ -8,13 +9,13 @@
     "themeLight": "Light",
     "themeSystem": "System"
   },
-  "footer": {
+  "Footer": {
     "footerTitle": "Together, we will create innovative projects",
     "footerDescription": "If you seek to develop quality projects",
     "footerContact": "get in touch",
     "footerMessage": "Made with ❤️ and lots of ☕"
   },
-  "home": {
+  "Home": {
     "title": "Software Developer",
     "subtitle": "Passionate about the intersection of technology, programming, and Design",
     "description": "Hello 👋 my name is Rafael Almendra. I have participated in projects with thousands of daily accesses, I am pursuing a bachelor's degree in Information Systems and founded my own system with the aim of revolutionizing management in the legal universe. I invite you through this site to learn a little more about me and my projects.",

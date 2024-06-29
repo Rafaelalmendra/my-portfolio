@@ -2,19 +2,20 @@
 
 import { useMemo } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
 import { useTheme } from 'next-themes';
 
-import { navbarItems } from 'mocks';
+import { NavbarMock } from 'mocks';
 
-import { Button, ThemeToggle } from 'components';
+import { Button, LanguageToggle, ThemeToggle } from 'components';
 
 import { Github, Linkedin, Menu, Search } from 'lucide-react';
 
+import { Link, usePathname } from '../../../navigation';
+
 const Navbar = () => {
   const pathname = usePathname();
+  const { navbarItems } = NavbarMock();
   const { theme, systemTheme } = useTheme();
 
   const isDark = useMemo(() => {
@@ -64,6 +65,8 @@ const Navbar = () => {
           </Button>
 
           <ThemeToggle />
+
+          <LanguageToggle />
 
           <a
             target="_blank"
