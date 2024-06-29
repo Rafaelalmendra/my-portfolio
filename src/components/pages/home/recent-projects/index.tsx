@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { useTranslations } from 'next-intl';
+
 import type { ProjectType } from 'types';
 
 import { ProjectCard, ShimmerButton } from 'components';
@@ -9,10 +11,12 @@ type RecentProjectsProps = {
 };
 
 const RecentProjects = ({ projects }: RecentProjectsProps) => {
+  const t = useTranslations('Home');
+
   return (
     <section className="w-full flex items-center justify-center">
       <div className="max-w-7xl w-full flex flex-col justify-center">
-        <p>Projetos públicos</p>
+        <p>{t('lastProjects')}</p>
 
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-7 mt-3">
           {projects.map((item) => (
@@ -23,7 +27,7 @@ const RecentProjects = ({ projects }: RecentProjectsProps) => {
         <div className="w-full flex items-center justify-center">
           <Link href="/works" className="w-full lg:w-auto">
             <ShimmerButton className="w-full lg:w-auto mt-5">
-              Visualizar todos
+              {t('viewAll')}
             </ShimmerButton>
           </Link>
         </div>

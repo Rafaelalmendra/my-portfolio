@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import Image from 'next/image';
 
 import Autoplay from 'embla-carousel-autoplay';
+import { useTranslations } from 'next-intl';
 
 import type { ClientType } from 'types';
 
@@ -20,12 +21,13 @@ type ClientsCarouselProps = {
 };
 
 const ClientsCarousel = ({ clients }: ClientsCarouselProps) => {
+  const t = useTranslations('Home');
   const plugin = useRef(Autoplay({ delay: 1500, stopOnInteraction: true }));
 
   return (
     <div className="max-w-7xl w-full flex flex-col items-center justify-center overflow-hidden my-[54px] lg:my-[70px]">
       <h2 className="lg:max-w-[542px] text-center text-xl lg:text-3xl font-semibold mb-4 lg:mb-8">
-        +4 anos impactando empresas e criando produtos inovadores
+        {t('clientsMessage')}
       </h2>
 
       <Carousel

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { useTranslations } from 'next-intl';
+
 import { cn } from 'utils';
 
 import { AnimatedShinyText, Button, TypingAnimation } from 'components';
@@ -7,6 +9,8 @@ import { AnimatedShinyText, Button, TypingAnimation } from 'components';
 import { Linkedin, Mail } from 'lucide-react';
 
 const HeroTexts = () => {
+  const t = useTranslations('Home');
+
   return (
     <>
       <div
@@ -15,30 +19,24 @@ const HeroTexts = () => {
         )}
       >
         <AnimatedShinyText className="text-center inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-          <span>
-            🚀 Apaixonado pela interseção entre tecnologia, programação e Design
-          </span>
+          <span>🚀 {t('subtitle')}</span>
         </AnimatedShinyText>
       </div>
 
       <TypingAnimation
         className="text-center text-2xl lg:text-5xl font-semibold mt-2 lg:mt-6"
-        text="Desenvolvedor de Software"
+        text={t('title')}
       />
 
       <p className="text-xs lg:text-base max-w-[1060px] text-justify lg:text-center mt-2 dark:text-[#bebebe] text-[#71717A]">
-        Olá 👋 me chamo Rafael Almendra. Já participei de projetos com milhares
-        de acessos diários, faço bacharelado em Sistemas de Informação e fundei
-        meu próprio sistema com o objetivo de revolucionar a gestão no universo
-        jurídico. Te convido através deste site a conhecer um pouco mais sobre
-        mim e meus projetos.
+        {t('description')}
       </p>
 
       <div className="w-full flex items-center justify-center gap-3 mt-4 mb-8">
         <Link href="/contact" className="w-full lg:w-auto">
           <Button className="w-full lg:w-auto gap-1">
             <Mail size={16} />
-            Contato
+            {t('contact')}
           </Button>
         </Link>
 
