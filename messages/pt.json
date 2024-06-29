@@ -9,12 +9,6 @@
     "themeLight": "Claro",
     "themeSystem": "Sistema"
   },
-  "Footer": {
-    "footerTitle": "Juntos, criaremos projetos inovadores",
-    "footerDescription": "Se você busca desenvolver projetos de qualidade",
-    "footerContact": "entre em contato",
-    "footerMessage": "Feito com ❤️ e muito ☕"
-  },
   "Home": {
     "title": "Desenvolvedor de Software",
     "subtitle": "Apaixonado pela interseção entre tecnologia, programação e Design",
@@ -24,5 +18,11 @@
     "lastProjects": "Projetos públicos",
     "viewAll": "Visualizar Todos",
     "clientsMessage": "+4 anos impactando empresas e criando produtos inovadores"
+  },
+  "Footer": {
+    "footerTitle": "Juntos, criaremos projetos inovadores",
+    "footerDescription": "Se você busca desenvolver projetos de qualidade",
+    "footerContact": "entre em contato",
+    "footerMessage": "Feito com ❤️ e muito ☕"
   }
 }

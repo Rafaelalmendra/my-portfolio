@@ -9,12 +9,6 @@
     "themeLight": "Light",
     "themeSystem": "System"
   },
-  "Footer": {
-    "footerTitle": "Together, we will create innovative projects",
-    "footerDescription": "If you seek to develop quality projects",
-    "footerContact": "get in touch",
-    "footerMessage": "Made with ❤️ and lots of ☕"
-  },
   "Home": {
     "title": "Software Developer",
     "subtitle": "Passionate about the intersection of technology, programming, and Design",
@@ -24,5 +18,11 @@
     "lastProjects": "Public projects",
     "viewAll": "View All",
     "clientsMessage": "+4 years impacting companies and creating innovative products"
+  },
+  "Footer": {
+    "footerTitle": "Together, we will create innovative projects",
+    "footerDescription": "If you seek to develop quality projects",
+    "footerContact": "get in touch",
+    "footerMessage": "Made with ❤️ and lots of ☕"
   }
 }

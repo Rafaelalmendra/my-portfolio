@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { useTranslations } from 'next-intl';
 import { useTheme } from 'next-themes';
 
 import { Button } from 'components';
@@ -11,6 +12,7 @@ import ShineBorder from 'components/magicui/shine-border';
 import { CircleArrowUp, Play } from 'lucide-react';
 
 const Footer = () => {
+  const t = useTranslations('Footer');
   const { theme, systemTheme } = useTheme();
 
   const isDark =
@@ -45,18 +47,18 @@ const Footer = () => {
               </div>
 
               <h4 className="text-center lg:text-start lg:max-w-[543px] font-semibold text-2xl lg:text-5xl mt-4">
-                Juntos, criaremos projetos inovadores
+                {t('footerTitle')}
               </h4>
 
               <p className="text-center lg:text-start opacity-75 mt-5 mb-4 lg:mb-0">
-                Se você busca desenvolver projetos de qualidade,{' '}
+                {t('footerDescription')},{' '}
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://wa.me/5586988320616?text=Ol%C3%A1%2C+tudo+bem%3F+"
                   className="underline font-semibold"
                 >
-                  entre em contato
+                  {t('footerContact')}
                 </a>
               </p>
             </div>
@@ -90,7 +92,7 @@ const Footer = () => {
             </Button>
           </div>
 
-          <p className="font-regular opacity-75">Feito com ❤️ e muito ☕</p>
+          <p className="font-regular opacity-75">{t('footerMessage')}</p>
         </div>
       </div>
     </footer>
