@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Markdown from 'react-markdown';
-
 import { cn } from 'utils';
 
 import {
@@ -80,9 +78,10 @@ const WorkCard = ({
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace('https://', '').replace('www.', '').replace('/', '')}
           </div>
-          <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-            {description}
-          </Markdown>
+          <div
+            dangerouslySetInnerHTML={{ __html: description }}
+            className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert"
+          ></div>
         </div>
       </CardHeader>
 
