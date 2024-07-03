@@ -2,6 +2,7 @@
   "Header": {
     "headerHome": "Página Inicial",
     "headerWorks": "Trabalhos",
+    "headerCareer": "Carreira",
     "headerAbout": "Sobre",
     "headerArticles": "Artigos",
     "headerContact": "Contato",
@@ -9,20 +10,24 @@
     "themeLight": "Claro",
     "themeSystem": "Sistema"
   },
+  "Footer": {
+    "footerTitle": "Juntos, criaremos projetos inovadores",
+    "footerDescription": "Se você busca desenvolver projetos de qualidade",
+    "footerContact": "entre em contato",
+    "footerMessage": "Feito com ❤️ e muito ☕"
+  },
   "Home": {
     "title": "Desenvolvedor de Software",
     "subtitle": "Apaixonado pela interseção entre tecnologia, programação e Design",
-    "description": "Olá 👋 me chamo Rafael Almendra. Já participei de projetos com milhares de acessos diários, faço bacharelado em Sistemas de Informação e fundei meu próprio sistema com o objetivo de revolucionar a gestão no universo jurídico. Te convido através deste site a conhecer um pouco mais sobre mim e meus projetos.",
+    "description": "Olá 👋 me chamo Rafael Almendra. Já participei de projetos com milhares de acessos diários, faço bacharelado em Sistemas de Informação. Te convido através deste site a conhecer um pouco mais sobre mim e meus projetos.",
     "contact": "Contato",
     "resumeDownload": "Baixar Currículo",
     "lastProjects": "Projetos públicos",
     "viewAll": "Visualizar Todos",
     "clientsMessage": "+4 anos impactando empresas e criando produtos inovadores"
   },
-  "Footer": {
-    "footerTitle": "Juntos, criaremos projetos inovadores",
-    "footerDescription": "Se você busca desenvolver projetos de qualidade",
-    "footerContact": "entre em contato",
-    "footerMessage": "Feito com ❤️ e muito ☕"
+  "Works": {
+    "title": "Trabalhos e projetos",
+    "description": "Explore alguns projetos públicos que fizeram parte da minha carreira em tecnologia. Cada um reflete minha dedicação e paixão pelo desenvolvimento de soluções inovadoras."
   }
 }

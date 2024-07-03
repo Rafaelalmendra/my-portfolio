@@ -39,13 +39,7 @@ export default async function RootLayout({
             <Navbar />
             <Toaster />
 
-            <div
-              style={{
-                marginTop: 'calc(4.625rem + 3.625rem)',
-              }}
-            >
-              {children}
-            </div>
+            <div>{children}</div>
 
             <Footer />
           </ThemeProvider>

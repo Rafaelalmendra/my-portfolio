@@ -1,5 +1,4 @@
-import Link from 'next/link';
-
+import { Link } from 'navigation';
 import { useTranslations } from 'next-intl';
 
 import type { ProjectType } from 'types';

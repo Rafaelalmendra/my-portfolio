@@ -1,3 +1,4 @@
+export * from './shared/framer';
 export * from './shared/navbar';
 export * from './shared/footer';
 export * from './shared/building';
@@ -11,6 +12,9 @@ export * from './pages/home/hero-carousel';
 export * from './pages/home/recent-projects';
 export * from './pages/home/clients-carousel';
 
+export * from './pages/works/work-card';
+
+export * from './ui/card';
 export * from './ui/badge';
 export * from './ui/toast';
 export * from './ui/dialog';

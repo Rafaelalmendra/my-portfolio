@@ -2,6 +2,7 @@
   "Header": {
     "headerHome": "Home",
     "headerWorks": "Works",
+    "headerCareer": "Career",
     "headerAbout": "About",
     "headerArticles": "Articles",
     "headerContact": "Contact",
@@ -9,20 +10,24 @@
     "themeLight": "Light",
     "themeSystem": "System"
   },
+  "Footer": {
+    "footerTitle": "Together, we will create innovative projects",
+    "footerDescription": "If you seek to develop quality projects",
+    "footerContact": "get in touch",
+    "footerMessage": "Made with ❤️ and lots of ☕"
+  },
   "Home": {
     "title": "Software Developer",
     "subtitle": "Passionate about the intersection of technology, programming, and Design",
-    "description": "Hello 👋 my name is Rafael Almendra. I have participated in projects with thousands of daily accesses, I am pursuing a bachelor's degree in Information Systems and founded my own system with the aim of revolutionizing management in the legal universe. I invite you through this site to learn a little more about me and my projects.",
+    "description": "Hello 👋 my name is Rafael Almendra. I have participated in projects with thousands of daily accesses, I am pursuing a bachelor's degree in Information Systems. I invite you through this site to learn a little more about me and my projects.",
     "contact": "Contact",
     "resumeDownload": "Download Resume",
     "lastProjects": "Public projects",
     "viewAll": "View All",
     "clientsMessage": "+4 years impacting companies and creating innovative products"
   },
-  "Footer": {
-    "footerTitle": "Together, we will create innovative projects",
-    "footerDescription": "If you seek to develop quality projects",
-    "footerContact": "get in touch",
-    "footerMessage": "Made with ❤️ and lots of ☕"
+  "Works": {
+    "title": "Works and projects",
+    "description": "Explore some public projects that were part of my career in technology. Each reflects my dedication and passion for developing innovative solutions."
   }
 }

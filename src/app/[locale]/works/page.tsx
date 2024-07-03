@@ -1,5 +1,7 @@
 import type { Metadata, NextPage } from 'next';
 
+import { getProjects } from 'queries';
+
 import { WorksView } from 'views';
 
 export const metadata: Metadata = {
@@ -7,7 +9,9 @@ export const metadata: Metadata = {
 };
 
 const Works: NextPage = async () => {
-  return <WorksView />;
+  const projects = await getProjects();
+
+  return <WorksView projects={projects} />;
 };
 
 export default Works;

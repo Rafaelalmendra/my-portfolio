@@ -16,16 +16,21 @@ const NavbarMock = () => {
     },
     {
       id: 3,
+      title: t('headerCareer'),
+      href: '/career',
+    },
+    {
+      id: 4,
       title: t('headerAbout'),
       href: '/about',
     },
     {
-      id: 4,
+      id: 5,
       title: t('headerArticles'),
       href: '/articles',
     },
     {
-      id: 5,
+      id: 6,
       title: t('headerContact'),
       href: '/contact',
     },
