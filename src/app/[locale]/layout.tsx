@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Rafael Almendra - Desenvolvedor de Software',
   description:
-    'Mais de 4 anos de experiência como desenvolvedor Front-end, com foco em tecnologias como: React, Next.js, Angular, Node.js, Javascript, TypeScript, Html, Css, Git e Figma.',
+    'Mais de 5 anos de experiência em criação de sites, sistemas Web e Mobile',
 };
 
 export default async function RootLayout({
@@ -28,7 +28,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} bg-[#fff] dark:bg-[#09090B] text-foreground`}
+      >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider
             attribute="class"

@@ -9,7 +9,7 @@ import { useTheme } from 'next-themes';
 import { Button } from 'components';
 import ShineBorder from 'components/magicui/shine-border';
 
-import { CircleArrowUp, Play } from 'lucide-react';
+import { CircleArrowUp, Github, Linkedin, Play } from 'lucide-react';
 
 const Footer = () => {
   const t = useTranslations('Footer');
@@ -29,7 +29,7 @@ const Footer = () => {
           className="w-full"
           color={['#A07CFE', '#FE8FB5', '#FFBE7B']}
         >
-          <div className="w-full flex flex-col lg:flex-row items-center justify-between px-[24px] py-[26px] lg:px-[46px] lg:py-[36px] dark:border-[#1f293f] bg-gradient-to-r from-[#F4F4F5] dark:from-[#030c20] to-[##020817] rounded-lg">
+          <div className="w-full flex flex-col lg:flex-row items-center justify-between px-[24px] py-[26px] lg:px-[46px] lg:py-[36px] dark:border-[#1f293f] bg-gradient-to-r from-[#F4F4F5] dark:from-[#161717] to-[#161717] rounded-lg">
             <div className="flex flex-col items-start justify-center">
               <div className="flex items-center justify-center gap-3">
                 <Image
@@ -90,6 +90,26 @@ const Footer = () => {
             <Button variant="ghost" size="icon" onClick={handleScrollToTop}>
               <CircleArrowUp size={24} />
             </Button>
+
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Rafaelalmendra"
+            >
+              <Button variant="ghost" size="icon">
+                <Github size={20} />
+              </Button>
+            </a>
+
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/rafaelalmendraa/"
+            >
+              <Button variant="ghost" size="icon">
+                <Linkedin size={20} />
+              </Button>
+            </a>
           </div>
 
           <p className="font-regular opacity-75">{t('footerMessage')}</p>
