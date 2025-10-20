@@ -89,20 +89,13 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-3">
-          <Button variant="outline" size="icon" disabled>
-            <Search size={22} />
-          </Button>
-
           <ThemeToggle />
-
           <LanguageToggle />
         </div>
 
         <div className="flex lg:hidden items-center justify-center gap-3">
           <ThemeToggle />
-
           <LanguageToggle />
-
           <Button variant="outline" size="icon">
             <Menu size={22} />
           </Button>
