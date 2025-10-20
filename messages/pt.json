@@ -24,7 +24,8 @@
     "resumeDownload": "Baixar Currículo",
     "lastProjects": "Projetos públicos",
     "viewAll": "Visualizar Todos",
-    "clientsMessage": "+5 anos de experiência em criação de sites, sistemas Web e Mobile"
+    "clientsMessage": "+5 anos de experiência em criação de sites, sistemas Web e Mobile",
+    "technologiesUsed": "Tecnologias utilizadas"
   },
   "Works": {
     "title": "Trabalhos e projetos",

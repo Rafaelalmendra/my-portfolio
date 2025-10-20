@@ -24,25 +24,33 @@ const Navbar = () => {
   }, [theme, systemTheme]);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 50);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrollTop = window.scrollY;
+          setIsScrolled(scrollTop > 80);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <nav
-      className={`fixed z-20 w-full h-[4.5rem] lg:h-[5.25rem] flex items-center justify-center transition-all duration-300 ease-in-out ${
+      className={`fixed z-20 w-full h-[4.5rem] lg:h-[5.25rem] flex items-center justify-center transition-all duration-500 ease-out ${
         isScrolled
           ? 'top-4 left-1/2 transform -translate-x-1/2 max-w-4xl rounded-2xl shadow-lg backdrop-blur-md bg-white/80 dark:bg-[#161717]/80 border border-gray-200/50 dark:border-gray-700/50'
-          : 'top-0 border-b bg-white dark:bg-[#161717]'
+          : 'top-0 left-0 transform translate-x-0 border-b bg-white dark:bg-[#161717] rounded-none shadow-none backdrop-blur-none'
       }`}
     >
       <div
-        className={`w-full flex items-center justify-between transition-all duration-300 ${
+        className={`w-full flex items-center justify-between transition-all duration-500 ease-out ${
           isScrolled ? 'px-6' : 'max-w-7xl px-4 lg:px-0'
         }`}
       >

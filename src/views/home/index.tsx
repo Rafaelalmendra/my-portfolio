@@ -3,14 +3,11 @@ import { useTranslations } from 'next-intl';
 import type { ClientType, ProjectType } from 'types';
 
 import {
-  Button,
   ClientsCarousel,
   HeroCarousel,
   HeroTexts,
   RecentProjects,
 } from 'components';
-
-import { ArrowDownToLine } from 'lucide-react';
 
 type HomeViewProps = {
   projects: ProjectType[];
@@ -22,7 +19,7 @@ const HomeView = ({ projects, clients }: HomeViewProps) => {
 
   return (
     <main
-      className="w-full flex flex-col items-center justify-center px-4 lg:px-0"
+      className="w-full min-h-[50vh] flex flex-col items-center justify-center px-4 lg:px-0 "
       style={{
         marginTop: 'calc(4.625rem + 3.625rem)',
       }}
