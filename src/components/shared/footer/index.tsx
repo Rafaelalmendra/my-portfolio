@@ -29,7 +29,7 @@ const Footer = () => {
           className="w-full"
           color={['#A07CFE', '#FE8FB5', '#FFBE7B']}
         >
-          <div className="w-full flex flex-col lg:flex-row items-center justify-between px-[24px] py-[26px] lg:px-[46px] lg:py-[36px] dark:border-[#1f293f] bg-gradient-to-r from-[#F4F4F5] dark:from-[#161717] to-[#161717] rounded-lg">
+          <div className="w-full flex flex-col lg:flex-row items-center justify-between px-[24px] py-[26px] lg:px-[46px] lg:py-[36px] dark:border-[#1f293f] bg-gradient-to-r from-[#F4F4F5] dark:from-[#161717] to-[#fff] rounded-lg">
             <div className="flex flex-col items-start justify-center">
               <div className="flex items-center justify-center gap-3">
                 <Image

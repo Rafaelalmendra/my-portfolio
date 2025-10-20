@@ -30,9 +30,9 @@ const HomeView = ({ projects, clients }: HomeViewProps) => {
       <HeroTexts />
       <HeroCarousel />
 
-      <Button variant="link" className="gap-2 mt-8 mb-[48px]">
+      {/* <Button variant="link" className="gap-2 mt-8 mb-[48px]">
         <ArrowDownToLine size={16} /> {t('resumeDownload')}
-      </Button>
+      </Button> */}
 
       {projects && projects.length > 0 && (
         <RecentProjects projects={projects} />

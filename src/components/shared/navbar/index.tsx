@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
 
 import { useTheme } from 'next-themes';
@@ -17,14 +17,35 @@ const Navbar = () => {
   const pathname = usePathname();
   const { navbarItems } = NavbarMock();
   const { theme, systemTheme } = useTheme();
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const isDark = useMemo(() => {
     return systemTheme === 'dark' && (theme === 'system' || theme === 'dark');
   }, [theme, systemTheme]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 z-20 w-full h-[4.5rem] lg:h-[5.25rem] flex items-center justify-center border-b bg-white dark:bg-[#161717]">
-      <div className="max-w-7xl w-full flex items-center justify-between px-4 lg:px-0">
+    <nav
+      className={`fixed z-20 w-full h-[4.5rem] lg:h-[5.25rem] flex items-center justify-center transition-all duration-300 ease-in-out ${
+        isScrolled
+          ? 'top-4 left-1/2 transform -translate-x-1/2 max-w-4xl rounded-2xl shadow-lg backdrop-blur-md bg-white/80 dark:bg-[#161717]/80 border border-gray-200/50 dark:border-gray-700/50'
+          : 'top-0 border-b bg-white dark:bg-[#161717]'
+      }`}
+    >
+      <div
+        className={`w-full flex items-center justify-between transition-all duration-300 ${
+          isScrolled ? 'px-6' : 'max-w-7xl px-4 lg:px-0'
+        }`}
+      >
         <div className="flex items-center gap-7">
           <Link href="/">
             <div className="relative w-[29px] h-[34px] hover:translate-y-[-2px] transition-transform">
