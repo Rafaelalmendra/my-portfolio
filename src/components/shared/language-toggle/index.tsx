@@ -19,7 +19,7 @@ const LanguageToggle = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon">
-          <Languages className="h-[1.2rem] w-[1.2rem]" />
+          <Languages className="h-5 w-5" />
           <span className="sr-only">Toggle language</span>
         </Button>
       </DropdownMenuTrigger>
